@@ -36,7 +36,7 @@ using the **WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)**.
 """)
 
 st.info("""
-### 📖 About this Dashboard
+###About this Dashboard
 
 This dashboard analyses **DTP3 vaccination coverage**, a key indicator used by the
 World Health Organization (WHO) and UNICEF to monitor the performance of routine
