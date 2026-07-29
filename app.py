@@ -192,13 +192,6 @@ with col3:
         f"{change:+}"
     )
 
-
-
-
-
-
-
-
 # Graph
 who_df = pd.DataFrame({
     "Year": ["2015", "2015", "2025", "2025"],
@@ -271,7 +264,8 @@ st.divider()
 
 st.title("Change in Coverage (2015–2025)")
 
-st.info("""
+with st.expander("What do the charts represent?"):
+    st.markdown("""
 The chart on the **left** highlights the **10 countries that experienced the largest increase**
 in DTP3 vaccination coverage between **2015 and 2025**.
 
@@ -462,7 +456,8 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.title("Projection to 2030")
 
-st.info("""
+with st.expander("What is happening here?"):
+    st.markdown("""
 A simple **linear trend** was fitted to each country's DTP3 vaccination coverage
 between **2015 and 2025**. The trend was then projected to **2030**.
 
