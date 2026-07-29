@@ -35,7 +35,7 @@ Explore global childhood **DTP3 vaccination coverage** between **2015 and 2025**
 using the **WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)**.
 """)
 
-with st.expander("ℹ️ About this Dashboard"):
+with st.expander("About this Dashboard"):
     st.markdown("""
 ### About this Dashboard
 
@@ -70,6 +70,7 @@ st.divider()
 # Dashboard KPIs
 # ---------------------------------------------------
 st.title("Overall Analysis")
+
 
 st.info("""Vaccination coverage is the percentage of the target population that received the recommended DTP3 vaccine. The **average coverage** represents the mean vaccination coverage across all **201 countries** in the dataset for the selected year.
 
