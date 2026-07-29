@@ -374,7 +374,6 @@ st.warning("""
 
 **Kazakhstan** experienced the largest decline in DTP3 vaccination coverage, decreasing by **39 percentage points** over the same period.
 
-These results highlight considerable variation in childhood vaccination trends across countries, with some nations making substantial progress while others experienced significant declines in coverage.
 """)
 
 # ---------------------------------------------------
