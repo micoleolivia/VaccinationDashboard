@@ -35,27 +35,28 @@ Explore global childhood **DTP3 vaccination coverage** between **2015 and 2025**
 using the **WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)**.
 """)
 
-st.info("""
-### 📖 About this Dashboard
+with st.expander("ℹ️ About this Dashboard"):
+    st.markdown("""
+### About this Dashboard
 
 This dashboard analyses **DTP3 vaccination coverage**, a key indicator used by the
 World Health Organization (WHO) and UNICEF to monitor the performance of routine
 childhood immunisation programmes worldwide.
 
-**What is DTP3?**
+#### What is DTP3?
 
 DTP3 refers to the **third dose** of the vaccine that protects against:
 
-• Diphtheria
-• Tetanus
-• Pertussis (Whooping Cough)
+- Diphtheria
+- Tetanus
+- Pertussis (Whooping Cough)
 
-**Who does it apply to?**
+#### Who does it apply to?
 
 DTP3 coverage measures the percentage of **surviving infants (approximately one year old)**
 who have received all three recommended doses of the DTP vaccine.
 
-**Why is DTP3 important?**
+#### Why is DTP3 important?
 
 DTP3 coverage is widely recognised as one of the best indicators of the strength and
 accessibility of a country's routine immunisation programme. High coverage helps reduce
@@ -65,7 +66,6 @@ the risk of disease outbreaks and contributes to improved child health.
 """)
 
 st.divider()
-
 # ---------------------------------------------------
 # Dashboard KPIs
 # ---------------------------------------------------
