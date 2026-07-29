@@ -579,52 +579,6 @@ This represents a projected change of **{change:+} countries** compared with 202
 as an indication of the current trajectory rather than a prediction.*
 """)
 
-# ---------------------------------------------------
-# Data Explorer
-# ---------------------------------------------------
-
-st.subheader("Data Explorer")
-
-# Create two columns for the filters
-filter_col1, filter_col2 = st.columns(2)
-
-# Country filter
-countries = ["All Countries"] + sorted(df["NAME"].unique())
-
-selected_country = filter_col1.selectbox(
-    "Select Country",
-    countries
-)
-
-# Year filter
-years = ["All Years"] + sorted(df["YEAR"].unique())
-
-selected_year = filter_col2.selectbox(
-    "Select Year",
-    years
-)
-
-# Apply filters
-filtered_df = df.copy()
-
-if selected_country != "All Countries":
-    filtered_df = filtered_df[
-        filtered_df["NAME"] == selected_country
-    ]
-
-if selected_year != "All Years":
-    filtered_df = filtered_df[
-        filtered_df["YEAR"] == selected_year
-    ]
-
-st.dataframe(filtered_df, use_container_width=True)
-
-
-st.divider()
-
 st.caption("""
 **Source:** WHO/UNICEF Estimates of National Immunization Coverage (WUENIC).
 
-**WHO/UNICEF Immunization Agenda 2030 (IA2030):**
-The global target is for every country to achieve at least **90% national DTP3 coverage by 2030**.
-""")
