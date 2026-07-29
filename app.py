@@ -579,6 +579,8 @@ This represents a projected change of **{change:+} countries** compared with 202
 as an indication of the current trajectory rather than a prediction.*
 """)
 
+
+
 st.caption("""
 **Source:** WHO/UNICEF Estimates of National Immunization Coverage (WUENIC).
 
