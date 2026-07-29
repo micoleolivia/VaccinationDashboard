@@ -26,6 +26,43 @@ def load_data():
 df = load_data()
 
 # ---------------------------------------------------
+# Summary Statistics
+# ---------------------------------------------------
+countries = df["NAME"].nunique()
+
+coverage_2015 = df[df["YEAR"] == 2015]
+coverage_2025 = df[df["YEAR"] == 2025]
+
+average_coverage_2015 = (
+    coverage_2015["COVERAGE"]
+    .mean()
+)
+
+average_coverage_2025 = (
+    coverage_2025["COVERAGE"]
+    .mean()
+)
+
+coverage_change = (
+    average_coverage_2025 
+    - average_coverage_2015
+)
+
+
+meeting_2015 = (coverage_2015["COVERAGE"] >= 90).sum()
+meeting_2025 = (coverage_2025["COVERAGE"] >= 90).sum()
+
+below_2015 = (coverage_2015["COVERAGE"] < 90).sum()
+below_2025 = (coverage_2025["COVERAGE"] < 90).sum()
+
+target_change = meeting_2025 - meeting_2015
+
+
+
+
+
+
+# ---------------------------------------------------
 # Dashboard Title
 # ---------------------------------------------------
 st.title("🌍 Global Childhood Vaccination Dashboard")
@@ -87,26 +124,6 @@ Higher coverage indicates that a greater proportion of children are protected ag
 """)
 
 
-countries = df["NAME"].nunique()
-
-coverage_2015 = df[df["YEAR"] == 2015]
-coverage_2025 = df[df["YEAR"] == 2025]
-
-average_coverage_2015 = (
-    coverage_2015["COVERAGE"]
-    .mean()
-)
-
-average_coverage_2025 = (
-    coverage_2025["COVERAGE"]
-    .mean()
-)
-
-coverage_change = (
-    average_coverage_2025 
-    - average_coverage_2015
-)
-
 
 # KPI cards
 col1, col2, col3 = st.columns(3)
@@ -147,15 +164,6 @@ st.divider()
 # WHO / IA2030 Target
 # ---------------------------------------------------
 
-
-
-meeting_2015 = (coverage_2015["COVERAGE"] >= 90).sum()
-meeting_2025 = (coverage_2025["COVERAGE"] >= 90).sum()
-
-below_2015 = (coverage_2015["COVERAGE"] < 90).sum()
-below_2025 = (coverage_2025["COVERAGE"] < 90).sum()
-
-change = meeting_2025 - meeting_2015
 
 
 st.title("DTP3 Target")
