@@ -71,18 +71,18 @@ st.divider()
 # Executive Summary
 # ---------------------------------------------------
 
-st.subheader("📋 Executive Summary")
+st.subheader("Executive Summary")
 
 st.warning("""
-🔴 **Global average DTP3 coverage declined by 1.5 percentage points between 2015 and 2025.**
+**Global average DTP3 coverage declined by 1.5 percentage points between 2015 and 2025.**
 
-🔴 **Progress towards the WHO/UNICEF IA2030 target slowed, with 20 fewer countries achieving at least 90% DTP3 coverage in 2025 than in 2015.**
+**Progress towards the WHO/UNICEF IA2030 target slowed, with 20 fewer countries achieving at least 90% DTP3 coverage in 2025 than in 2015.**
 
-🔴 **If recent trends continue, approximately 95 countries are projected to remain below the WHO/UNICEF IA2030 target of at least 90% DTP3 coverage by 2030.**
+**If recent trends continue, approximately 95 countries are projected to remain below the WHO/UNICEF IA2030 target of at least 90% DTP3 coverage by 2030.**
 
-🟢 **Ukraine recorded the largest improvement in DTP3 coverage (+71 percentage points).**
+**Ukraine recorded the largest improvement in DTP3 coverage (+71 percentage points).**
 
-🔴 **Kazakhstan recorded the largest decline in DTP3 coverage (−39 percentage points).**
+**Kazakhstan recorded the largest decline in DTP3 coverage (−39 percentage points).**
 """)
 
 st.divider()
