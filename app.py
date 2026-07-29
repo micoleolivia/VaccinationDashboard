@@ -74,6 +74,9 @@ st.divider()
 st.subheader("Executive Summary")
 
 st.warning("""
+This dashboard analyses **DTP3 vaccination coverage across 201 countries** using
+WHO/UNICEF Estimates of National Immunization Coverage (WUENIC), comparing **2015** with **2025**.
+
 **Ukraine recorded the largest improvement in DTP3 coverage (+71 percentage points).**
 
 **Kazakhstan recorded the largest decline in DTP3 coverage (−39 percentage points).**
