@@ -72,7 +72,7 @@ st.divider()
 st.title("Overall Analysis")
 
 
-with st.expander("ℹ️ What does average vaccination coverage mean?"):
+with st.expander("What does average vaccination coverage mean?"):
     st.markdown("""
 Vaccination coverage is the percentage of the target population that received the recommended DTP3 vaccine.
 
@@ -156,7 +156,7 @@ change = meeting_2025 - meeting_2015
 st.title("DTP3 Target")
 
 # Explanation BEFORE graph
-with st.expander("ℹ️ What does average vaccination coverage mean?"):
+with st.expander("What do the these results mean?"):
     st.markdown("""
 The WHO and UNICEF Immunization Agenda 2030 (IA2030) aims for every country to achieve
 **at least 90% national coverage** of the third dose of the diphtheria, tetanus and
