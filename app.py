@@ -30,6 +30,7 @@ df = load_data()
 # ---------------------------------------------------
 st.title("🌍 Global Childhood Vaccination Dashboard")
 
+with st.expander("What is DTP3?"):
 st.markdown("""
 Explore global childhood **DTP3 vaccination coverage** between **2015 and 2025**
 using the **WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)**.
