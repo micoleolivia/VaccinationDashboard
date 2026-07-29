@@ -36,6 +36,17 @@ Explore global childhood **DTP3 vaccination coverage** between **2015 and 2025**
 using the **WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)**.
 """)
 
+st.subheader("Executive Summary")
+
+st.markdown(f"""
+### Key Findings
+
+- 🔴 Global DTP3 coverage decreased from **{average_coverage_2015:.1f}%** to **{average_coverage_2025:.1f}%**.
+- 🔴 **{abs(change)} fewer countries** met the WHO target of **90% coverage**.
+- 🟢 **{largest_improved}** recorded the largest improvement.
+- 🔴 **{largest_declined}** recorded the largest decline.
+""")
+
 st.info("""
 This dashboard analyses **DTP3 vaccination coverage**, a key indicator used by the
 World Health Organization (WHO) and UNICEF to monitor the performance of routine
