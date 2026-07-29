@@ -69,7 +69,7 @@ st.divider()
 # ---------------------------------------------------
 # Dashboard KPIs
 # ---------------------------------------------------
-st.title("Overall Analysis")
+st.title("Vaccination Coverage")
 
 
 with st.expander("What does average vaccination coverage mean?"):
@@ -156,7 +156,7 @@ change = meeting_2025 - meeting_2015
 st.title("DTP3 Target")
 
 # Explanation BEFORE graph
-with st.expander("What do the these results mean?"):
+with st.expander("What is the DTP3 Target?"):
     st.markdown("""
 The WHO and UNICEF Immunization Agenda 2030 (IA2030) aims for every country to achieve
 **at least 90% national coverage** of the third dose of the diphtheria, tetanus and
