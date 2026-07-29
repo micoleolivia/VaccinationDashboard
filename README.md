@@ -1,6 +1,6 @@
 # Childhood Vaccination Dashboard
 
-An interactive Streamlit dashboard that explores global childhood vaccination coverage using the WHO/UNICEF Estimates of National Immunization Coverage (WUENIC) dataset.
+An interactive Streamlit dashboard that explores global childhood DTP3 vaccination coverage between 2015 and 2025 using the WHO/UNICEF Estimates of National Immunization Coverage (WUENIC).
 
 🌐 **Live Demo:** [https://your-streamlit-link.streamlit.app](https://vaccinationdashboard-e7cbmdglaht3r9lms7vfgc.streamlit.app/)
 
