@@ -263,12 +263,12 @@ st.plotly_chart(
 # Insight message
 if change > 0:
     st.success(
-       "Progress towards the WHO/UNICEF IA2030 target increased, with f"{change} more countries meeting the WHO/UNICEF IA2030 target in 2025 than in 2015."
+        f"Progress towards the WHO/UNICEF IA2030 target increased, with {change} more countries meeting the WHO/UNICEF IA2030 target in 2025 than in 2015."
     )
 
 elif change < 0:
     st.warning(
-        "Progress towards the WHO/UNICEF IA2030 target slowed, with f"{abs(change)} fewer countries meeting the WHO/UNICEF IA2030 target in 2025 than in 2015."
+        f"Progress towards the WHO/UNICEF IA2030 target slowed, with {abs(change)} fewer countries meeting the WHO/UNICEF IA2030 target in 2025 than in 2015."
     )
 
 else:
@@ -276,10 +276,7 @@ else:
         "The number of countries meeting the WHO/UNICEF IA2030 target remained unchanged."
     )
 
-
 st.divider()
-
-
 
 # ---------------------------------------------------
 # Most & Least Improved Countries
